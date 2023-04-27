@@ -15,6 +15,6 @@ public interface CreateTeamRequestMapper {
     @Mapping(target = "lastModifiedDate", ignore = true)
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdDate", ignore = true)
-    Team map(CreateTeamRequest request);
+    Team map(CreateTeamRequest request;
 
 }
