@@ -18,7 +18,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B clean install --file pom.xml
+      run: mvn clean install
     - uses: actions/upload-artifact@v2
       with:
         name: app.jar
