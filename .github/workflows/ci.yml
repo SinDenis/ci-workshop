@@ -46,5 +46,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/javaTinkoffApp:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/java-app:latest
     needs: [build]
