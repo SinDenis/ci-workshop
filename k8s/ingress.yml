@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: java-app-ingress
+  annotations:
+    kubernetes.io/tls-acme: "false"
+spec:
+  rules:
+    - host: java-app-sindenis.cloud.okteto.net
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: java-app-service
+              servicePort: 8080

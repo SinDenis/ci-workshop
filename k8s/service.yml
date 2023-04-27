@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-app-service
+spec:
+  selector:
+    service: java-app
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
