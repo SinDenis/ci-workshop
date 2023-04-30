@@ -15,8 +15,7 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: '17'
-        distribution: 'liberica'
-        architecture: 'x86'
+        distribution: 'temurin'
         cache: maven
     - name: Build with Maven
       run: mvn clean install
